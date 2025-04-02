@@ -1,6 +1,6 @@
-import { useState } from "react";
 import cn from "clsx";
 import { ICard } from "../types";
+import Image from "next/image";
 
 interface Props {
   card: ICard;
@@ -19,7 +19,7 @@ export const Card = ({ card, selectedCard, handleSelectedCard }: Props) => {
       onClick={handleSelectedCard(card)}
     >
       <div className="relative">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1590496793929-36417d3117de?q=80&amp;w=800"
           alt="4 Yard Skip"
           className="w-full h-36 md:h-48 object-cover rounded-md mb-4"
